@@ -27,6 +27,26 @@ SolverEngines includes a GUI to display useful information about engines in flig
 See AJE or RealFuels for examples of how to implement SolverEngines in practice.
 
 Changelog:
+v1.13
+* Respect the "Ignore Max Temperature" cheat option.
+
+v1.12
+* Update to KSP 1.0.5.
+* Get rid of ModuleAnimateEmissive, now unneded with stock changes.
+* Remove engine code now included in stock (e.g. remove hacky event replacements).
+* Make engine module and solver abstract.
+* Allow engine modules to check whether they are underwater
+
+v1.11
+* Make heat production quadratic with throttle rather than linear.
+
+v1.10
+* Fix some NREs.
+* Fix flickering of FX on burnout.
+* Fix error in speed of sound formula; this fixes AJE propellers (with AJE 2.4+)
+* Add hook for temperature-based autorestart.
+* Make displayed actual throttle display two decimal points.
+
 v1.9
 * Prevent flight GUI button from disappearing.
 * Fix flameouts at 0 mass requested.
